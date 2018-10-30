@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/view_details"
+        android:title="View pet details"
+        />
+    <item
+        android:id="@+id/edit_details"
+        android:title="Change pet details"
+        />
+    <item
+        android:id="@+id/report_missing"
+        android:title="Report missing"
+        />
+    <item
+        android:id="@+id/assign_petex_tag"
+        android:title="Assign PetEx Tag"
+        />
+    <item
+        android:id="@+id/pet_updates"
+        android:title="Pet Updates"
+        />
+</menu>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.codebusters.petexmanager.petexpetmanager.PetPreviewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:padding="20dp">
+
+            <com.beardedhen.androidbootstrap.BootstrapThumbnail
+                android:id="@+id/editpet_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center_horizontal"
+                android:scaleType="centerCrop"
+                app:bootstrapBrand="success"
+
+                app:hasBorder="false" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/edit_upload_button"
+                android:text = "Upload"
+                app:bootstrapBrand="success"
+                app:buttonMode="regular"
+                app:showOutline="true"
+                app:roundedCorners="true"
+                android:layout_marginTop="10dp"
+                />
+            <!--
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/editpet_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@mipmap/ic_app_logo"
+                app:civ_border_color="@color/flat_gray"
+                app:civ_border_width="2dp" />
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/flat_white"
+                android:text = "Change"
+                android:layout_marginTop="10dp"
+                android:background="@color/flat_green"
+                android:layout_gravity="center"/>
+            -->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:background="@color/flat_white">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:bootstrapBrand="success"
+                    android:text="Name"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    app:bootstrapBrand="success"
+                    app:roundedCorners="true"
+                    android:hint = "Name"
+                    android:id="@+id/editpet_name"
+                    />
+                <!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Name : "
+                    android:textStyle="bold"
+                    android:textColor="@color/flat_black"/>
+
+                <TextView
+                    android:id="@+id/editpet_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="pet_name"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/flat_white"
+                    android:text = "Change"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/flat_green"
+                    android:layout_weight="1"/>
+               -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <com.beardedhen.androidbootstrap.AwesomeTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:bootstrapBrand="success"
+                    android:text="Description"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapEditText
+                    android:id="@+id/editpet_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:hint="Description"
+                    android:inputType="textMultiLine|textImeMultiLine"
+                    android:singleLine="false"
+                    app:bootstrapBrand="success"
+                    app:roundedCorners="true"/>
+
+                <!--
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Description :"
+                    android:textStyle="bold"
+                    android:textColor="@color/flat_black"/>
+
+                <TextView
+                    android:id="@+id/editpet_desc"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="pet_desc"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/flat_white"
+                    android:text = "Change"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/flat_green"
+                    android:layout_weight="1"/>
+
+                -->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp">
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bootstrapSize="md"
+                    app:bootstrapBrand="regular"
+                    app:roundedCorners="true"
+                    android:text="Back"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:id="@+id/edit_back_button"
+                    />
+
+                <com.beardedhen.androidbootstrap.BootstrapButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:bootstrapSize="md"
+                    app:bootstrapBrand="success"
+                    app:roundedCorners="true"
+                    android:text="Save Changes"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:id="@+id/edit_save_changes_button"
+                    />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

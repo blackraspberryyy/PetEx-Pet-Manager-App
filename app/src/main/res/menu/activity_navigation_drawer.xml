@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mypets"
+            android:icon="@drawable/ic_pets_black_24dp"
+            android:title="@string/my_pets" />
+        <item
+            android:id="@+id/nav_newsandnotif"
+            android:icon="@drawable/ic_place_black_24dp"
+            android:title="Missing Pets" />
+        <item
+            android:id="@+id/nav_scannfc"
+            android:icon="@drawable/ic_nfc_black_24dp"
+            android:title="@string/scan_for_petex_tag" />
+    </group>
+
+    <item android:title="Others">
+        <menu>
+        <!--
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="@string/settings" />
+            <item
+                android:id="@+id/nav_contactus"
+                android:icon="@drawable/ic_email_black_24dp"
+                android:title="Feedback" />
+        -->
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@mipmap/ic_app_logo"
+                android:title="@string/about_petex_pet_manager" />
+        </menu>
+    </item>
+
+</menu>
